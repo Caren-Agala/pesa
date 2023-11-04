@@ -30,6 +30,7 @@ class Bank(User):
             print("Account balance has been updated: Kshs. ", self.balance)
     
     def view_balance(self):
+        self.show_details()
         print("Account balance: Kshs. ", self.balance)
         
 
