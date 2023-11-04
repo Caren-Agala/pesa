@@ -1,0 +1,6 @@
+Allo the user to register an account
+Allow the user to log in
+Allow the user to deposit money and update the details
+Allow the user to withdraw money and update the details
+Allow the user to view balance and personal details
+Allow the user to edit personal details
