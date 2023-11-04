@@ -21,12 +21,24 @@ class Bank(User):
     def deposit(self, amount):
         self.balance += amount
         print("Account balance has been updated: Kshs. ", self.balance)
-       
+        
+    def withdraw(self, amount):
+        if amount > self.balance:
+            print("Insufficient funds | Balance Available: Kshs. ", self.balance)
+        else:
+            self.balance -= amount
+            print("Account balance has been updated: Kshs. ", self.balance)
+    
+    def view_balance(self):
+        print("Account balance: Kshs. ", self.balance)
+        
 
 Caren = User('Caren', 23, 1234)
 Caren.show_details()
 Carens_account = Bank('Caren', 23, 1234)
 Carens_account.deposit(1000)
 Carens_account.deposit(7000)
+Carens_account.withdraw(700)
+Carens_account.view_balance()
 
         
